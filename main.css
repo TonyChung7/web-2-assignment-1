@@ -16,44 +16,36 @@ body {
 /* Header styles */
 header {
   background: linear-gradient(134deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 1rem;
+  padding: 0.3rem;
   border-radius: 20px;
   margin-bottom: 2rem;
   text-align: center;
   box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.1);
 }
 
-header div {
+header nav {
   max-width: 1199px;
   margin: 0 auto;
 }
 
-header h0 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-}
 
-header div nav ul {
+header nav ul {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
-  margin-top: 1rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
-header ul li {
-  font-size: 1.5rem;
+header nav ul li {
+  font-size: 1.3em;
   font-weight: 500;
   background-color: transparent;
   border-left: none;
   box-shadow: none;
+  padding: 0.5rem;
+  margin: 0;
 }
 
-header p {
-  font-size: 1rem;
-  opacity: 1;
-}
 
 /* Main content */
 main {
@@ -96,7 +88,7 @@ section p {
   font-size: 1rem;
 }
 
-article img {
+section article img {
   max-width: 90%;
   height: auto;
   border-radius: 20px;
@@ -105,10 +97,21 @@ article img {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.article-text {
+  text-align: justify;
+  padding: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
 /* Output areas */
 .output {
   background-color: #f7f9fa;
-  border: 0px solid #e9ecef;
+  border: 1px solid #e9ecef;
   border-radius: 5px;
   padding: 1rem;
   margin-top: 0rem;
@@ -149,13 +152,14 @@ ul li:last-child {
 #error-messages,
 #broken-array-errors {
   margin-top: 0rem;
+  padding: 1rem;
 }
 
 .error-message {
   background-color: #f7d7da;
   color: #720c24;
   padding: 0.75rem;
-  border: 0px solid #f5c6cb;
+  border: 1px solid #f5c6cb;
   border-radius: 3px;
   margin-bottom: 1rem;
   font-family: "Courier New", monospace;
@@ -180,9 +184,6 @@ ul li:last-child {
     padding: 0.5rem;
   }
 
-  header h0 {
-    font-size: 1rem;
-  }
 
   section {
     padding: 1rem;
